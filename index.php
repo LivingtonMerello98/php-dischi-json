@@ -8,7 +8,12 @@
 </head>
 
 <body>
-
+    <main id="app">
+        <h1>{{ message }}</h1>
+    </main>
+    <!--vue cdn-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
