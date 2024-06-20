@@ -1,0 +1,14 @@
+/*card*/
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+    /* Effetto di sollevamento al passaggio del mouse */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}

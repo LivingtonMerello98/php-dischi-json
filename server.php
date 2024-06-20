@@ -1,6 +1,7 @@
 <?php
 
 $albums = [
+
     [
         "image" => "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
         "album" => "Dark Side of the Moon",
