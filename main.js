@@ -6,6 +6,7 @@ createApp({
     data() {
         return {
             title: 'albums',
+            url: "http://localhost/php-dischi-json/server.php",
             // albums: [
             //     {
             //         image: "",
@@ -64,6 +65,17 @@ createApp({
             //         year: 1976
             //     }
             // ]
+            albums: [],
         }
+    },
+    methods: {
+        getAlbums() {
+            axios.get(this.url).then((response) => {
+                this.albums = response.data
+            });
+        },
+    },
+    created() {
+        this.getAlbums();
     }
 }).mount('#app')
